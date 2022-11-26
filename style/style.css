@@ -74,6 +74,7 @@ h1, h2, h3 {
 	display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
+	margin: 0 0 32px 0;
 }
 
 .logo-block {
@@ -82,6 +83,8 @@ h1, h2, h3 {
 
 .menu__burger {
 	margin: 0 15px 167.5px auto;
+	background: initial;
+	border: none;
 }
 
 .visually-hidden {
@@ -94,7 +97,6 @@ h1, h2, h3 {
 
 	width: 328px;
 	margin: 0 auto;
-	padding: 32px 0 0 0 ;
 
 	text-align: center;
 }
@@ -161,13 +163,13 @@ h1, h2, h3 {
 }
 
 .popup-title:after {
-	margin: 9.5px auto 25px auto;
+	margin: 9px auto 23px auto;
 }
 
 /*   ПЕРВАЯ ФОРМА SELECT  */
 
 .form-group {
-	margin-bottom: 30px;
+	margin-bottom: 28px;
 }
 
 .question-header {
@@ -209,13 +211,13 @@ h1, h2, h3 {
 .choice-text::before {
 	content: "";
 	display: inline-block;
-	width: 22.5px;
-	height: 22.5px;
+	width: 23px;
+	height: 23px;
 	margin-right: 3px;
 
 	background-image: url(../svg/form-empty-circle.svg);
 	background-repeat: no-repeat;
-	background-size: 22.5px;
+	background-size: 23px;
   background-position: center;
 
 	vertical-align: middle;
@@ -234,12 +236,16 @@ h1, h2, h3 {
 
 /*  TEXTAREA ТРЕТЬЯ ФОРМА    */
 
+.textarea-group {
+	margin-bottom: 20px;
+}
+
 .textarea {
 	max-width: 280px;
 	min-width: 280px;
 	max-height: 150px;
-	min-height: 112px;
-	padding: 18px 0 0 19px;
+	min-height: 130px;
+	padding: 16px 0 0 19px;
 
 	font-size: 14px;
 
@@ -255,13 +261,8 @@ h1, h2, h3 {
 
 /*   ОСНОВНАЯ ЧАСТЬ   */
 
-.block-trends {
-	max-width: 1660px;
-	margin: 0 auto;
-}
-
 .title__block-trends {
-	padding: 38.5px 0 0 0;
+	padding: 39px 0 0 0;
 
 	font-size: 1.6rem;
 	font-weight: 700;
@@ -277,7 +278,7 @@ h1, h2, h3 {
 }
 
 .title__block-trends::after {
-	margin: 8px auto 25px auto;
+	margin: 8px auto 24px auto;
 }
 
 .container__block-trends {
@@ -397,7 +398,7 @@ h1, h2, h3 {
 }
 
 .container__main-post:nth-child(n+2) {
-	margin: 36px 0 0 0;
+	margin: 37px 0 0 0;
 }
 
 .image__main-post {
@@ -416,8 +417,15 @@ h1, h2, h3 {
 	text-transform: uppercase;
 }
 
-.tag-link {
+.tag-list-item {
 	margin: 0 18px 0 0;
+}
+
+.tag-list-item:last-child {
+	margin: 0;
+}
+
+.tag-link {
 	color: #b59f5b;
 }
 
@@ -432,7 +440,7 @@ h1, h2, h3 {
 }
 
 .meta-group {
-	margin: 17.5px 0 14px 0;
+	margin: 17px 0 14px 0;
 
 	font-size: 1.2rem;
 	color: #888888;
@@ -461,7 +469,7 @@ h1, h2, h3 {
 
 .description::after {
 	width: 100%;
-	margin: 19.5px 0 0 0;
+	margin: 19px 0 0 0;
 
 	border-bottom: 3px solid #eeeeee;
 }
@@ -480,7 +488,7 @@ h1, h2, h3 {
 }
 
 .new-posts__title::after {
-	margin: 8.5px auto 28.5px auto;
+	margin: 9px auto 29px auto;
 }
 
 .container__new-post {
@@ -496,7 +504,7 @@ h1, h2, h3 {
 }
 
 .text-group__new-post {
-	margin: -3.5px 0 0 18px;
+	margin: -3px 0 0 18px;
 }
 
 .meta__new-post {
@@ -519,10 +527,6 @@ h1, h2, h3 {
 
 /*   ФОРМЫ   */
 /*   ПОИСК   */
-
-.form {
-	max-width: 640px;
-}
 
 .search-group {
 	margin: 60px 0 39px 0;
@@ -598,7 +602,7 @@ h1, h2, h3 {
 .send-button {
 	display: block;
 	width: 100%;
-	margin: 17px 0 38.5px 0;
+	margin: 17px 0 38px 0;
 	padding: 16px;
 }
 
@@ -717,8 +721,8 @@ h1, h2, h3 {
 }
 
 .card-text-group {
-	margin-top: -33.5px;
-	padding: 47px 20px 25px 17px;
+	margin-top: -34px;
+	padding: 47px 20px 26px 17px;
 	flex-grow: 1;
 
 	border: 3px solid rgba(181, 159, 91, 0.6);
@@ -733,7 +737,6 @@ h1, h2, h3 {
 }
 
 .card__description {
-	padding-right: 17px;
 	margin: 0 0 22px 0;
 	
 	font-size: 1.5rem;
@@ -829,9 +832,7 @@ h1, h2, h3 {
 .copyright {
 	text-align: center;
 	padding: 0 0 45px 0;
-}
 
-.copyright-text {
 	font-size: 1.2rem;
 	font-weight: 700;
 }
@@ -873,7 +874,7 @@ h1, h2, h3 {
 	}
 
 	.description__first-paragraph {
-		padding-bottom: 9px;
+		padding-bottom: 12px;
 	}
 
 	/*   САЙДБАР    */
@@ -886,10 +887,6 @@ h1, h2, h3 {
 		margin: -5px 0 0 0;
 			
 		font-size: 1.4rem;
-	}
-
-	.new-posts__title::after {
-		margin: 9.5px auto 28.5px auto;
 	}
 
 	/*   РАССЫЛКА   */
@@ -936,6 +933,7 @@ h1, h2, h3 {
 
 	.body__header {
 		width: 698px;
+		margin-bottom: 87px;
 	}
 
 	.logo-block {
@@ -948,7 +946,6 @@ h1, h2, h3 {
 
 	.title-block__header {
 		width: 610px;
-		padding: 87px 0 0 0 ;
 	}
 
 	.title {
@@ -965,7 +962,7 @@ h1, h2, h3 {
 	}
 
 	.title__block-trends::after {
-		margin-bottom: 18.5px;
+		margin-bottom: 18px;
 	}
 
 	.card {
@@ -1075,8 +1072,6 @@ and (min-height: 550px) {
 
 @media (min-width: 1201px) {
 	.container-header {
-		max-width: 1660px;
-		margin: 0 auto;
 		padding: 28px 0 128px 0;
 		
 		background-image: url(../images/banner-bg.jpg);
@@ -1084,6 +1079,7 @@ and (min-height: 550px) {
 
 	.body__header {
 		width: 1170px;
+		margin-bottom: 101px;
 		
 	}
 
@@ -1121,7 +1117,6 @@ and (min-height: 550px) {
 
 	.title-block__header {
 		width: 690px;
-		padding: 101px 0 0 0;
 	}
 
 	.title {
@@ -1253,7 +1248,7 @@ and (min-height: 550px) {
 	   /*НАШИ ИЗДЕЛИЯ */ 
 
 	.product-block {
-		margin: 60px 0 40px 0;
+		margin: 59px 0 39px 0;
 	}
 
 	.product-block__title {
@@ -1284,6 +1279,6 @@ and (min-height: 550px) {
 	/*   FOOTER  */
 
 	.socials {
-		margin: 0 0 66px 0;
+		margin: 0 0 65px 0;
 	}
 }
